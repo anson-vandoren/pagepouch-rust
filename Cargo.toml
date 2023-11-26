@@ -1,0 +1,12 @@
+[package]
+name = "pagepouch"
+version = "0.1.0"
+authors = ["Anson VanDoren <anson@ansonvandoren.com>"]
+edition = "2021"
+publish = false
+
+[workspace]
+members = [".", "api", "service", "entity", "migration"]
+
+[dependencies]
+pagepouch-api = { path = "api"}

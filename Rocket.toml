@@ -1,0 +1,5 @@
+[default]
+template_dir = "api/templates/"
+
+[default.databases.sea_orm]
+url = "sqlite:./dev.db?mode=rwc"

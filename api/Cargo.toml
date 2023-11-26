@@ -1,0 +1,20 @@
+[package]
+name = "pagepouch-api"
+version = "0.1.0"
+authors = ["Anson VanDoren <anson@ansonvandoren.com>"]
+edition = "2021"
+publish = false
+
+[dependencies]
+async-trait = { version = "0.1" }
+pagepouch-service = { path = "../service" }
+migration = { path = "../migration" }
+entity = { path = "../entity" }
+futures = "0.3.28"
+rocket = { version = "^0.5.0", features = ["json"] }
+rocket_dyn_templates = { version = "0.1.0", features = ["tera"] }
+serde_json = { version = "1" }
+tokio = "1.29.0"
+
+[dependencies.sea-orm-rocket]
+version = "0.5.3"
